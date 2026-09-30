@@ -1,0 +1,6 @@
+# Kopieer dit bestand lokaal naar .dev.vars en vul echte waarden in.
+# Voeg .dev.vars nooit toe aan GitHub.
+RESEND_API_KEY=re_xxxxxxxxx
+OFFERTES_TO_EMAIL=offerte@jouwdomein.nl
+OFFERTES_FROM_EMAIL=MaatwerkKunststof.nl <offerte@maatwerkkunststof.nl>
+SEND_CONFIRMATION=false

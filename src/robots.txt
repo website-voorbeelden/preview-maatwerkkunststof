@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /bedankt/
+Disallow: /api/
+
+Sitemap: https://maatwerkkunststof.nl/sitemap.xml
