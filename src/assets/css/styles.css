@@ -765,6 +765,12 @@ body .footer-links a:hover,body .footer-links a:focus-visible{color:var(--green)
 body .mkh-product-card:hover img,body .mk-product-card:hover img,body .product-card:hover img,body .mkh-example-card:hover img,body .mat-example-card:hover img{transform:scale(1.04)}
 @media (prefers-reduced-motion:reduce){body .site-nav li a,body .button,body .mkh-btn,body .mkb-btn,body .mkh-link,body .mk-text-link,body .text-link,body .card-link,body .mkh-product-image img,body .mk-product-image img,body .card-image img,body .mkh-example-card img,body .mat-example-card img{transition:none}}
 
+/* Keep the site navigation consistently white, without grey borders or shadows. */
+.site-header{border:0;background:#fff;box-shadow:none}
+.site-nav{border:0;background:#fff;box-shadow:none}
+.site-nav li{border:0}
+.site-nav li a{background:#fff}
+
 /* Bijna neutrale vlakken zoals in de referentie. */
 body p{color:#303433}
 body .product-card,body .material-card,body .operation-card,body .mat-card,body .mat-example-card,body .mat-property-card,body .mat-application-card,body .klg-example,body .pc-form,body .pc-gallery-stage{border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.045)}
