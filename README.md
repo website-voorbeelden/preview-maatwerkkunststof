@@ -25,6 +25,12 @@ Deze map bevat het volledige project voor de preview-repository. Controleer voor
 
 Neem de volledige wijziging mee: `src/`, `eleventy.config.js` en documentatie. Herstel de verwijderde `.njk`-templates niet. De `_site/`-map is gebouwde uitvoer en blijft via `.gitignore` uitgesloten van commits.
 
+### GitHub Pages-preview
+
+GitHub Pages moet worden ingesteld op **GitHub Actions**, niet op een branch-root. De workflow in `.github/workflows/pages.yml` bouwt de site naar `_site/` en publiceert die. Bij de preview-build worden lokale links voorzien van de repository-prefix `/preview-maatwerkkunststof/`. De workflow publiceert na een push naar `main` of de preview-branch; pull requests voeren alleen de build uit.
+
+GitHub Pages serveert alleen statische bestanden. De offertefunctie in `functions/api/offerte.js` draait daar niet; gebruik voor werkende offerteverwerking de Cloudflare Pages-deployment hieronder.
+
 De bestaande Cloudflare Pages-instellingen kunnen blijven:
 
 - Build command: `npm run build`
