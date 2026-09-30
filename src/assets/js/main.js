@@ -28,7 +28,7 @@
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1080) {
+    if (window.innerWidth >= 1024) {
       setMenu(false);
       header?.classList.remove('is-hidden');
     }

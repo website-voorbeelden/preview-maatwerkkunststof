@@ -51,7 +51,7 @@
 
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20260908-18">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261001-nav-02">
 
   <!-- JavaScript -->
   <script>
@@ -61,7 +61,7 @@
     };
   </script>
   <script src="/assets/js/cookie-consent.js?v=20260908-18" defer></script>
-  <script src="/assets/js/main.js?v=20260908-18" defer></script>
+  <script src="/assets/js/main.js?v=20261001-nav-02" defer></script>
 
   <!-- Organization structured data -->
   <script type="application/ld+json">
@@ -1588,9 +1588,9 @@ body.mkh-home .site-header {
 }
 body.mkh-home .site-header.is-scrolled,
 body.mkh-home .site-header.is-menu-open {
-  border-bottom: 1px solid #E6E8E6;
+  border: 0;
   background: #FFFFFF;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
+  box-shadow: none;
 }
 body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .wordmark img {
   filter: brightness(0) invert(1);
@@ -1604,14 +1604,25 @@ body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .menu-toggle {
 body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .menu-toggle span {
   background: #FFFFFF;
 }
-@media (min-width: 1080px) {
-  body.mkh-home .site-header:not(.is-scrolled) .site-nav li a {
+@media (min-width: 1024px) {
+  body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .site-nav li a {
     color: #FFFFFF;
+    background: transparent;
   }
-  body.mkh-home .site-header:not(.is-scrolled) .site-nav li a:hover,
-  body.mkh-home .site-header:not(.is-scrolled) .site-nav li a:focus-visible {
+  body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .site-nav li a:hover,
+  body.mkh-home .site-header:not(.is-scrolled):not(.is-menu-open) .site-nav li a:focus-visible {
     color: #171717;
+    background: var(--hover-highlight);
   }
+}
+@media (min-width: 1024px) and (max-width: 1079px) {
+  body.mkh-home .site-header { min-height: 0; border-radius: 0; }
+  body.mkh-home .site-header .header-inner { display: flex; width: min(calc(100% - 48px), 1180px); min-height: 76px; align-items: center; padding: 8px 0; }
+  body.mkh-home .header-left { display: flex; align-items: center; gap: 24px; }
+  body.mkh-home .wordmark { flex: 0 0 180px; }
+  body.mkh-home .site-nav { flex: 1; min-height: 0; justify-content: flex-end; background: #FFFFFF; }
+  body.mkh-home .site-nav ul { gap: 24px; margin-right: 8px; }
+  body.mkh-home .site-nav li a { margin: 0; padding: 8px 12px; font-size: 1.05rem; font-weight: 650; white-space: nowrap; }
 }
 @media (min-width: 1080px) {
   body.mkh-home .site-header { min-height: 0; border-radius: 0; }
