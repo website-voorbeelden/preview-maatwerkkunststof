@@ -1,0 +1,15 @@
+DIT IS DE VOLLEDIGE PROJECTMAP VOOR DE GITHUB-BOT
+
+Gebruik deze hele map, niet uitsluitend _site.
+
+- src bevat de nieuwste pagina's, afbeeldingen, sitemap en overige websitebestanden.
+- package.json en package-lock.json bevatten de bestaande buildafhankelijkheden.
+- eleventy.config.js is aangepast zodat de nieuwste HTML behouden blijft bij bouwen.
+- functions bevat de ongewijzigde offerteverwerking.
+- npm run build levert dezelfde website op als de goedgekeurde lokale versie.
+
+De oude Nunjucks-bronnen zijn bewust vervangen door volledige HTML-bronbestanden.
+Neem deze vervanging en de configuratiewijziging samen mee naar GitHub.
+De bestaande Cloudflare-buildopdracht npm run build en uitvoermap _site blijven gelden.
+
+Nog niet gecommit, gepusht of gepubliceerd. Zie README.md voor de overdracht.

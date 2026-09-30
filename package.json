@@ -1,0 +1,15 @@
+{
+  "name": "maatwerkkunststof",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SEO-first offertewebsite voor kunststof maatwerk, gebouwd met Eleventy en Cloudflare Pages.",
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('_site', { recursive: true, force: true })\"",
+    "dev": "npm run clean && eleventy --serve",
+    "build": "npm run clean && eleventy",
+    "preview": "npx wrangler pages dev _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
